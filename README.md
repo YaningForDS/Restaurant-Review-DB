@@ -1,8 +1,6 @@
-# Restaurant-Review-DB
+#App: "Restaurant-Review" --- A Retaurants Review and Recommendation Platform Database Web Application
 
-App: "Restaurant-Review" --- A Retaurants Review and Recommendation Platform Database Web Application
-
-Function:
+#Function:
 	1. User must have an personal account, registered with a unique username and password
 	2. After login with the App, user will hava a personal page
 	3. At the personal page, you can logout whenever the user want. Also, the page will show the restaurants name, address and time they ever went. Also, it will show the recommendation of category you like based on the users' history.
