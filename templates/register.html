@@ -1,0 +1,29 @@
+<html>
+<style>
+body{
+font-size: 15pt;
+font-family: arial;
+}
+</style>
+<body>
+<h1>Welcome to Your Favorite Restaurants!</h1>
+
+<form method="POST" action="/register2"> 
+<label>UserName:</label>
+<input name="newusername" type="text" size="25" maxlength="30" required><br>
+<div>{{user}}</div>
+<label>Password:</label>
+<input name="newpassword" type="password" size="25" maxlength="30" required><br>
+<label> Zip Code </label>
+<input name = "zipcode" type = "int" size = "25" maxlength = "30" required><br>
+<div>{{invalid}}</div>
+<label> Genger: </label>
+<select name = "gender">
+	<option value="F">F</option>
+	<option value="M">M</option>
+</select>
+<br>
+<p>
+<p><button align="center" type="submit" value="Register">Register</button></P>
+</p>
+</form>

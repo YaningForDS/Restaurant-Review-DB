@@ -1,0 +1,34 @@
+
+<a href="/">Log Out</a><br> 
+<p>Personal Information: password change</p>
+<div>My Histoty
+ {% for n in history %}
+    <div><p>Restaurant name: {{n[0]}}, Date: {{n[1]}}</p></div>
+    {% endfor %}
+</div><br> 
+
+<div>
+ <p>You might like: {{cate}}</p>
+</div><br>
+
+<label> Category </label>
+
+<form method="POST" action = '/admin/admin1'> 
+<select name = "category">
+	<option value="Spanish">Spanish</option>
+	<option value="Italian">Italian</option>
+	<option value="Latin_American">Latin_American</option>
+	<option value="Fast_Food">Fast_Food</option>
+	<option value="Mexican">Mexican</option>
+	<option value="Burgers">Burgers</option>
+	<option value="Seafood">Seafood</option>
+	<option value="Chinese">Chinese</option>
+</select>
+<p>
+<p><a href = '/admin/admin1'><button align="center" type="submit" value="Filter">Filter</button></a></P>
+</p>
+</form>
+
+
+
+<div>{{sesson}}</div>

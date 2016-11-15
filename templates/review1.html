@@ -1,0 +1,38 @@
+<p>The foods of the restaurant you choose</p>
+<div>{{n}}</div><br>
+
+
+
+<p>The overall rating of the the restaurant you choose</p>
+<div>{{rating}}</div>
+
+<form method="POST" action="/admin/admin1/admin2">
+<p>All the reviews for the restaurant you pick</p>
+<input name = "newreview" type = "text" size = "40">
+<label> Rating: </label>
+<select name = "rating">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+</select>
+<p><button align="center" type="submit" name = "review" value="review">Submit</button></P>
+</form>
+
+<div>{{newinfo}}</div>
+
+<div>
+    {% for n in first_review %}
+    <div><p>{{n[0]}} reviewed by {{n[1]}}</p>
+	<ul>
+        {% for p in second_level %}
+        <li>{{p[0]}} followed by {{p[1]}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+<div>{{info2}}</div><br>
+

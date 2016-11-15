@@ -1,0 +1,26 @@
+
+
+<p>The restaurant name, address and zip code for the category you choose</p><br>
+<form method = "POST" action = '/admin/admin1/admin2'>
+
+<div>
+    {% for n in res %}
+    <div>{{n[1:]}}</div>	
+    {% endfor %}
+</div>
+
+<select name = "resid">
+{% for i in res %}
+<option value="{{i[0]}}">{{i[1]}}</option>
+{% endfor %}
+</select>
+<p><a href = '/admin/admin1/admin2'><button align="center" type="submit" name = "submit1" value="Go">More Details about the restaurant</button></a></P>
+</form>
+
+<form method = "POST", action = '/admin/admin1/admin2/admin3'>
+<p><a href = '/admin/admin1/admin2/admin3'><button align="center" type="submit" name = "submit2" value="check">Check In</button></a></p>
+</form>
+
+<div>{{info}}</div>
+
+
